@@ -1,3 +1,22 @@
+
+
+const callback1 = (a) => a + 2; // 6
+const callback2 = (b) => b * 2; // 12
+const callback3 = (c) => c - 2; // 10
+console.log(runAll(4)(callback1, callback2, callback3)); // 10
+
+function runAll(initNum) {
+  return function (...args) {
+    let start = initNum;
+    for (let i = 0; i < args.length; i++) {
+      let f = args[i];
+      start = f(start);
+    }
+    return start;
+  };
+}
+
+
 const names = [
   { userid: 2, name: "Velen" },
   { userid: 56, name: "Illidan" },
@@ -33,15 +52,6 @@ function name_roles_join() {
 
 console.log(name_roles_join());
 
-// const callback1 = (a) => a + 2; // 6
-// const callback2 = (b) => b * 2; // 12
-// const callback3 = (c) => c - 2; // 10
-
-// function runAll(initNum) {
-//   return function (...args) {};
-// }
-
-// console.log(runAll(4)(callback1, callback2, callback3)); // 10
 
 source = [
   ["Foley", "Chemicals", "CHEM"],
