@@ -1,0 +1,10 @@
+<div class="card" [ngStyle]="cardStyles()">
+  <h4>{{ post.title }}</h4>
+  <p>{{ post.body }}</p>
+  <button
+    (click)="select()"
+    [ngStyle]="{ 'background-color': post.buttonColor }"
+  >
+    Set {{ post.buttonColor }}
+  </button>
+</div>

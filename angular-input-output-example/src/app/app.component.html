@@ -1,0 +1,11 @@
+<main>
+  <h1>Angular Input / Output Example</h1>
+  <div class="container">
+    <card
+      *ngFor="let post of posts; let i = index"
+      [post]="post"
+      [isClicked]="clickedPostId === post.id ? true : false"
+      (onClick)="clickedPost($event)"
+    ></card>
+  </div>
+</main>
