@@ -9,10 +9,7 @@ import { RatingListComponent } from './rating-list/rating-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    RatingComponent,
-    AverageRatingComponent,
-    RatingListComponent
+    
   ],
   imports: [
     BrowserModule,
