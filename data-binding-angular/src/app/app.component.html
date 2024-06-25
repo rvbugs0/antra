@@ -1,0 +1,6 @@
+<div>
+  <input type="text" [(ngModel)]="input" (input)="onTextChanged(input)" placeholder="Search cities">
+  <ul *ngIf="filteredCities.length > 0">
+    <li *ngFor="let city of filteredCities">{{ city }}</li>
+  </ul>
+</div>
