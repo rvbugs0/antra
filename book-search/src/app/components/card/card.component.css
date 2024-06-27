@@ -1,0 +1,22 @@
+.smaller-card {
+    width: 100%;
+    height: 40%;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .container {
+margin: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box-shadow here */
+border-radius: 15px;
+  }
+
+  .card-inside-container{
+    display: flex;
+
+  }
+
+

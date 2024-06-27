@@ -1,0 +1,15 @@
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+      <input
+        type="text"
+        placeholder="Search Book..."
+        aria-label="Search"
+        matInput
+        [formControl]="bookSearch"
+      />
+    </mat-form-field>
+    <app-card
+      *ngFor="let book of (books$ | async)?.slice(0, 10)"
+      [book]="book"
+    ></app-card>
+  </form>

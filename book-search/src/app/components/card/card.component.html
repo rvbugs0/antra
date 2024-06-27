@@ -1,0 +1,16 @@
+<div class="container">
+  <mat-card class="example-card smaller-card">
+    <div class="card-inside-container">
+      <img mat-card-image [src]="book.picture" alt="Picture not available" />
+      <div style="padding-left: 20px">
+        <mat-card-title
+          ><h3>{{ book.bookName }}</h3></mat-card-title
+        >
+        <b>Publisher: </b>{{ book.publisher }}<br />
+        <b>Published Date: </b>{{ book.pulishedDate | date }}<br />
+
+        <b>Description: </b>{{ book.description }}
+      </div>
+    </div>
+  </mat-card>
+</div>
